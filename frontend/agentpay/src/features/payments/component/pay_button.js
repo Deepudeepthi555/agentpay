@@ -1,17 +1,15 @@
 import React, { useState } from "react";
+import { startSubscription } from "../../../api/agentpay_api";
 
-const PayButton = () => {
+const PayButton = ({ payee, amount, interval }) => {
     const [isLoading, setIsLoading] = useState(false);
 
     const handlePayment = async () => {
         setIsLoading(true);
         try {
-            await new Promise((resolve) => setTimeout(resolve, 2000));
-            console.log("Payment successful!");
-            alert("Payment successful!");
+            await startSubscription(payee, amount, interval);
         } catch (error) {
-            console.error("Payment failed:", error);
-            alert("Payment failed. Please try again.");
+            console.error("Error:", error);
         } finally {
             setIsLoading(false);
         }

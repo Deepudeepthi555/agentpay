@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { fetchPlatforms } from "../../api/get_platform_api";
 import ShimmerLoader from "./components/shimmer";
 import Card from "./components/card";
+import { fetchPlatforms } from "../../api/get_platform_api";
 // Import Shimmer loader
 
 const Dashboard = () => {
@@ -50,6 +50,12 @@ const Dashboard = () => {
                     ))
                 )}
             </section>
+            {/* <PayNowButton
+                payee="0x8996bA8925b40f2d4b3766f22e293571D211E4A2" // Replace with the payee/platform address
+                amount="1" // Subscription amount in tokens
+                interval={30} // Payment interval in seconds (e.g., 7 days)
+            /> */}
+
         </div>
     );
 };
