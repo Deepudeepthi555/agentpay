@@ -12,33 +12,36 @@ const ShimmerLoader = () => {
 
 const styles = {
     shimmerCard: {
-        backgroundColor: "#e0e0e0",
+        width: "60%",
+        backgroundColor: "#f7f7f7", // Lighter background for shimmer
         borderRadius: "8px",
-        padding: "20px",
+        marginBottom: "15px",
+        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
         display: "flex",
         flexDirection: "column",
-        gap: "10px",
-        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+        gap: "20px",
+        padding: "20px",
         animation: "shimmer 1.5s infinite",
-        background: "linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%)",
+        background: "linear-gradient(90deg, #f7f7f7 25%, #ececec 50%, #f7f7f7 75%)",
         backgroundSize: "200% 100%",
+        transition: "all 0.3s ease-in-out", // Smooth transition for any changes
     },
     shimmerTitle: {
-        height: "20px",
+        height: "18px",
         width: "70%",
-        backgroundColor: "#cfcfcf",
+        backgroundColor: "#e0e0e0",
         borderRadius: "4px",
     },
     shimmerAmount: {
-        height: "25px",
+        height: "20px",
         width: "50%",
-        backgroundColor: "#cfcfcf",
+        backgroundColor: "#e0e0e0",
         borderRadius: "4px",
     },
     shimmerDate: {
         height: "15px",
-        width: "30%",
-        backgroundColor: "#cfcfcf",
+        width: "70%",
+        backgroundColor: "#e0e0e0",
         borderRadius: "4px",
     },
 };

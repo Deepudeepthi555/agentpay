@@ -1,5 +1,5 @@
 
-const API_URL = 'https://mocki.io/v1/05448b90-7161-438a-be38-1fbcf6764470';
+const API_URL = 'https://mocki.io/v1/e5b9bde4-a34e-42e3-8fc7-38d3710794ee';
 
 // Function to fetch platform data
 export const fetchPlatforms = async () => {

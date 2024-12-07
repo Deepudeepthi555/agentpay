@@ -1,10 +1,10 @@
-// src/components/Card/Card.js
+
 import React from "react";
 
 const Card = ({ platform, amount, dueDate }) => (
     <div style={styles.card}>
         <h3 style={styles.cardTitle}>{platform}</h3>
-        <p style={styles.cardAmount}>{amount}</p>
+        <p style={styles.cardAmount}>USDC:{amount}</p>
         <p style={styles.cardDueDate}>Due: {dueDate}</p>
     </div>
 );

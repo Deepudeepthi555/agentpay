@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { fetchPlatforms } from "../api/get_platform_api";
-import ShimmerLoader from "./shimmer";
-import Card from "./card";
+import { fetchPlatforms } from "../../api/get_platform_api";
+import ShimmerLoader from "./components/shimmer";
+import Card from "./components/card";
 // Import Shimmer loader
 
 const Dashboard = () => {

@@ -1,14 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import Dashboard from './Dashboard/dashboard';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import PaymentFlow from "./features/payments/payment_flow";
+import Dashboard from "./features/Dashboard/dashboard";
+
 
 function App() {
   return (
-    <div>
-      <Dashboard />
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<PaymentFlow />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
-
 
 export default App;
