@@ -8,14 +8,11 @@ A subscription management platform that allows users to track their active subsc
 - **Payment Interface**: Make payments using AgentPay for each subscription.
 - **Payment History**: Track payments and manage subscriptions easily.
 
-## Tech Stack
-- **Frontend**: React.js (for building dynamic UI components)
-- **State Management**: React useState & useEffect (for handling subscriptions data)
-- **Routing**: React Router (for navigation)
-- **HTTP Requests**: Axios (for fetching subscription data and processing payments)
-- **Styling**: Plain CSS (could be enhanced with TailwindCSS or Material-UI)
+## Working flow
+- User uses Pay Using AgentPay button in some website, which contains metadata about the payee
+- This triggers approval transaction for the subscription amount of SubTokens
+- Smart contract now executes first tranasaction and emits event subscription added.
+- Backend Agent listens for events on this contract, and adds the new subscription to its cron job.
+- Now based on intervals, backend agent will execute the payment transaction on the smart contract which has approval to spend the SubTokens.
 
-## Getting Started
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/Deepudeepthi555/agentpay.git
+![image](https://github.com/user-attachments/assets/51a5a84d-5980-4230-9609-a01eedbbf79c)
